@@ -6,13 +6,13 @@ import locale from 'element-ui/lib/locale/lang/zh-CN'
 import 'element-ui/lib/theme-chalk/index.css'
 
 import TablePage from './view/table-page.vue'
-import ElementTablePagination from 'el-table-page'
+import ElTablePage from 'el-table-page'
 Vue.use(Element, {
   size: 'small',
   locale
 })
 Vue.use(VueRouter)
-Vue.use(ElementTablePagination)
+Vue.use(ElTablePage)
 const routes = [
   { path: '/', component: TablePage }
 ]

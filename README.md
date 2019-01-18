@@ -4,21 +4,17 @@
 
 ## How to use
 
-```bash
-npm i el-table-page -S
-```
-
 ```js
 /* ignore this if you include element-table.js by <script> tag from a cdn, such as unpkg */
 import Vue from 'vue'
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
-import ElementTablePagination from 'el-table-page/src/components/element-table.vue'
+import ElTablePage from 'el-table-page'
 import Page from 'el-table-page/src/utils/page.js'
 
 Vue.use(Element)
-Vue.component('el-table-page', ElementTablePagination)
+Vue.component('el-table-page', ElTablePage)
 
 // Vue.use(ElementTablePagination)
 Vue.use(Page)

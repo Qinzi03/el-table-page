@@ -18,9 +18,15 @@ module.exports = {
   output: {
     path: config.build.assetsRoot,
     filename: 'el-table-page.js',
+    libraryTarget: 'window',
+    library: 'ElTablePage',
+    umdNamedDefine: true,
     publicPath: process.env.NODE_ENV === 'production'
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
+  },
+  externals: {
+    'element': 'element-ui'
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
